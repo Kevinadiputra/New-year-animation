@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Poppins:wght@900&display=swap");
+
+body {
+    background-color: #1a1818;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.msg {
+    width: 100%;
+    font-family: "Bilbo Swash Caps", cursive;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #ff0000;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+}
+
+.year {
+    font-size: 175px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    margin-top: 90px;
+    width: 100%;
+}
+
+.firework {
+    position: relative;
+    background-color: gold;
+    width: 4px;
+    height: 80px;
+    transform-origin: 50% 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.firework::before {
+    content: '';
+    background-color: gold;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    animation: fire 2s ease-in-out infinite;
+}
+
+@keyframes fire {
+    0% {
+        top: 100%;
+    }
+    25% {
+        top: 50%;
+    }
+    50% {
+        top: -25%;
+    }
+    75% {
+        top: -50%;
+    }
+    100% {
+        top: -50%;
+    }
+}
+
+#firework1 {
+    left: 25%;
+}
+
+#firework2 {
+    left: 50%;
+}
+
+#firework3 {
+    left: 80%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    .msg {
+        font-size: 50px;
+    }
+
+    .year {
+        font-size: 100px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .msg {
+        font-size: 80px;
+    }
+
+    .year {
+        font-size: 150px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .msg {
+        font-size: 100px;
+    }
+
+    .year {
+        font-size: 175px;
+        margin-top: 50px;
+    }
+}
