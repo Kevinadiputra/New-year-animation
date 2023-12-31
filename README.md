@@ -8,7 +8,6 @@ Explore an interactive web page that brings the joy of the New Year. 🚀 Witnes
 
 - Dynamic fireworks display
 - Festive animations
-- Countdown to the New Year
 - Responsive design for various devices
 
 ## How to Use
